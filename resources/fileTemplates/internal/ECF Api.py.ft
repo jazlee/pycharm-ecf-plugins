@@ -1,0 +1,22 @@
+#parse("ECF Header.py")
+
+from apisvc import *
+from sqlalchemy import *
+import sqlalchemy as sa
+from elixir import *
+from validators import *
+import datetime as dt
+import decimal as dcm
+from ecfutil import CurrencyContext, NoDigitScale
+from ecfutil import DigitScaleTwo, DigitScaleThree
+from sqlalchemy.orm.attributes import InstrumentedAttribute
+
+class ${ECF_Object_Name}(RPCService):
+    """
+    ${ECF_Description}
+    """
+
+    _description = '${ECF_Short_Description}'
+    _active = True
+    _version='1.0'
+

@@ -1,0 +1,18 @@
+#parse("ECF Header.py")
+
+from jobsvc import *
+from elixir import *
+from validators import *
+import decimal as dcm
+import datetime as dt
+import sqlalchemy as sa
+
+class ${ECF_Object_Name}(JOBEngine):
+    """
+    ${ECF_Description}
+    """
+
+    def execute(self, jobsession):
+        '''execute job ${ECF_Object_Name}.'''
+        pass
+

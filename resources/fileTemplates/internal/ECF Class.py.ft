@@ -1,0 +1,6 @@
+#parse("ECF Header.py")
+
+class ${ECF_Object_Name}:
+    """
+    ${ECF_Description}
+    """

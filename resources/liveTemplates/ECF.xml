@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="ECF">
+  <template name="afterAppendData" value="def afterAppendData(self, mvcsession, obj):&#10;    '''Event triggered after inserting data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" shortcut="SPACE" description="Event triggered after inserting data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterCopyData" value="def afterCopyData(self, mvcsession, obj):&#10;    '''Event triggered after copying data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" shortcut="SPACE" description="Event triggered after copying data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterDeleteData" value="def afterDeleteData(self, mvcsession, obj):&#10;    '''Event triggered after deleting data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" shortcut="SPACE" description="Event triggered after deleting data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterEditData" value="def afterEditData(self, mvcsession, obj):&#10;    '''Event triggered after editing data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" shortcut="SPACE" description="Event triggered after editing data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterGetSession" value="def afterGetSession(self, mvcsession):&#10;    '''After getting session'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    $END$&#10;    return mvcsession" shortcut="SPACE" description="After getting session" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterInitData" value="def afterInitData(self, mvcsession):&#10;    '''After initializing data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    fields = dataset.FieldsAsDict()&#10;    $END$&#10;    dataset.AdjustRecord(fields)&#10;    return mvcsession" shortcut="SPACE" description="After initializing data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterPostData" value="def afterPostData(self, mvcsession, obj):&#10;    '''Event triggered after posting data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;" description="Event triggered after posting data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="afterRetrieveData" value="def afterRetrieveData(self, mvcsession, obj):&#10;    '''Event triggered after retrieving data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;" description="Event triggered after retrieving data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeAppendData" value="def beforeAppendData(self, mvcsession, obj):&#10;    '''Event triggered before append data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;    " description="Event triggered before append data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeCommitData" value="def beforeCommitData(self, mvcsession, obj):&#10;    '''Event triggered before committing data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;    " description="Event triggered before committing data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeCopyData" value="def beforeCopyData(self, mvcsession, obj):&#10;    '''Event triggered before copying data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" description="Event triggered before copying data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeDeleteData" value="def beforeDeleteData(self, mvcsession, obj):&#10;    '''Event triggered before deleting data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" description="Event triggered before deleting data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeEditData" value="def beforeEditData(self, mvcsession, obj):&#10;    '''Event triggered before editing data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)" description="Event triggered before editing data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforePostData" value="def beforePostData(self, mvcsession, obj):&#10;    '''Event triggered before posting data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;    " description="Event triggered before posting data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="beforeRetrieveData" value="def beforeRetrieveData(self, mvcsession, obj):&#10;    '''Event triggered before retrieving data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return (mvcsession, obj)&#10;" description="Event triggered before retrieving data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="finalizeView" value="def finalizeView(self, mvcsession):&#10;    '''Finalize the program before closing it'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    $END$&#10;    return mvcsession&#10;" description="Finalize the program before closing it" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="initializeData" value="def initializeData(self, mvcsession):&#10;    '''Initializing data'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    params = mvcsession.paramDataset.FieldsAsDict()&#10;    $END$&#10;    dataset.AdjustRecord(params)&#10;    return mvcsession&#10;" description="Initializing data" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="initializeParam" value="def initializeParam(self, mvcsession, query):&#10;    '''Initialize parameters'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.paramDataset&#10;    params = dataset.FieldsAsDict()&#10;    $END$&#10;    dataset.AdjustRecord(params)&#10;    return query&#10;" description="Initialize parameters" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="initView" value="def initView(self, mvcsession):&#10;    '''Initialize the program'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    mvcsession.selectFunction = MVCExtFunction('XXXYYY.NNN', 'xxx', 'XXXYYY', \&#10;        params = {&#10;                'FFFFFFFF':'%f:AAAAAAAA',&#10;                'FFFFFFFF':'%v:nval'&#10;            }, autoSelect=False)&#10;    mvcsession.extFunctions = [MVCExtFunction('XXXYYY.NNN', 'Description', 'XXXYYY',&#10;                params = {&#10;                    'FFFFFFFF':'%f:AAAAAAAA',&#10;                    'FFFFFFFF':'%v:nval'&#10;                }),&#10;            MVCExtFunction('XXXYYY.NNN', 'Description', 'XXXYYY',&#10;                params = {&#10;                    'FFFFFFFF':'%f:AAAAAAAA',&#10;                    'FFFFFFFF':'%v:nval'&#10;                })]&#10;    $END$&#10;    return mvcsession&#10;&#10;" description="Initialize the program" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="lookupView" value="def lookupView(self, mvcsession, fieldName):&#10;    '''Define lookup metadata for specified field'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    ret = MVCLookupDef('','')&#10;    if (fieldName == 'FFFFFFFF'):&#10;        ret.svcname = 'XXXYYY'&#10;        ret.retfield = 'FFFFFFFF'&#10;        ret.params = {'FFFFFFFF':'%f:FFFFFFFF'}&#10;    $END$&#10;    return ret&#10;&#10;" description="Define lookup metadata for specified field" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="openView" value="def openView(self, mvcsession):&#10;    '''Prepare the data for browsing mode'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.listDataset&#10;    $END$&#10;    return mvcsession&#10;    " description="Prepare the data for browsing mode" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="postData" value="def postData(self, mvcsession):&#10;    '''Post data into persistent storage'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return mvcsession&#10;" description="Post data into persistent storage" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="printData" value="def printData(self, mvcsession):&#10;    '''Return the unique report ID for printing purpose'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    ret = $END$&#10;    return ret&#10;&#10;" description="Return the unique report ID for printing purpose" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="retrieveData" value="def retrieveData(self, mvcsession):&#10;    '''Retrieve data for editing mode'''&#10;    proxy = self.getBusinessObjectProxy()&#10;    dataset= mvcsession.entryDataset&#10;    $END$&#10;    return mvcsession" description="Retrieve data for editing mode" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="synchronizeData" value="def synchronizeData(self, mvcsession, fieldName, fieldType):&#10;    '''Synchronize data retrieved from user input'''&#10;    dataset = mvcsession.entryDataset if fieldType == MVCTypeField else \&#10;    mvcsession.paramDataset&#10;    fields = dataset.FieldsAsDict()&#10;    proxy = self.getBusinessObjectProxy()&#10;    if (fieldName == '$END$'):&#10;        pass&#10;    dataset.AdjustRecord(fields)&#10;    return mvcsession" description="Synchronize data retrieved from user input" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="validateData" value="def validateData(self, mvcsession):&#10;    '''Validate date retrieved from user input before storing it into persistent storage'''&#10;    dataset= mvcsession.entryDataset&#10;    fields = dataset.FieldsAsDict()&#10;    proxy = self.getBusinessObjectProxy()&#10;    $END$&#10;    return mvcsession&#10;&#10;" description="Validate date retrieved from user input before storing it into persistent storage" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="onOpenView" value="def onOpenView(self, fields):&#10;    '''Event trigered when retrieving list of data'''&#10;    $END$&#10;    return fields" description="Event trigered when retrieving list of data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+

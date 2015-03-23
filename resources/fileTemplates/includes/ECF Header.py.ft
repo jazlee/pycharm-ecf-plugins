@@ -1,0 +1,10 @@
+#
+# Created with IntelliJ IDEA.
+# Date: ${DATE}
+# Time: ${TIME}
+# To change this template use File | Settings | File Templates.
+#
+
+__author__    = '${USER}'
+__version__   = '1.0'
+__copyright__ = 'Copyright (c) 2009 My Company'

@@ -1,0 +1,12 @@
+#parse("ECF Header.py")
+
+from elixir import *
+
+class ${ECF_Object_Name}(Entity):
+    """
+    ${ECF_Description}
+    """
+
+
+    using_table_options(db_tablespace='${ECF_DB_TSpace}', db_largedata_tablespace='${ECF_LB_TSpace}',
+                        db_index_tablespace='${ECF_IX_TSpace}')

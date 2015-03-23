@@ -1,0 +1,17 @@
+#parse("ECF Header.py")
+
+from procsvc import *
+from elixir import *
+from validators import *
+import decimal as dcm
+import datetime as dt
+import ecfexceptions as EECF
+import sqlalchemy as sa
+from ecfutil import CurrencyContext, DigitScaleTwo, DigitScaleThree, DigitScaleSix, NoDigitScale
+
+class ${ECF_Object_Name}(BusinessObject):
+    """
+    ${ECF_Description}
+    """
+
+
