@@ -1,0 +1,21 @@
+#parse("ECF Header.py")
+
+from rpcsvc import *
+from elixir import *
+import datetime as dt
+import sqlalchemy as sa
+import ecfexceptions as EECF
+from validators import *
+
+class ${ECF_Object_Name}(RPCModule):
+    """
+    ${ECF_Description}
+    """
+
+    _description = '${ECF_Short_Description}'
+
+
+
+
+
+

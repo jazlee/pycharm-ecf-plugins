@@ -53,6 +53,10 @@ public abstract class CreateECFTemplateInPackageAction<T extends PsiElement> ext
             className = ECFBundle.message("default.ecf.bo.package") + "." + className;
         } else if (templateName.equalsIgnoreCase(ECFTemplateUtil.TEMPLATE_ECF_MODEL)) {
             className = ECFBundle.message("default.ecf.tbl.package") + "." + className;
+        } else if (templateName.equalsIgnoreCase(ECFTemplateUtil.TEMPLATE_ECF_DM)) {
+            className = "ecf.dm" + "." + className;
+        } else if (templateName.equalsIgnoreCase(ECFTemplateUtil.TEMPLATE_ECF_RPC)) {
+            className = "ecf.rpc" + "." + className;
         }
         final  String sExtension = StringUtil.getShortName(templateName);
         if (StringUtil.isNotEmpty(sExtension)) {

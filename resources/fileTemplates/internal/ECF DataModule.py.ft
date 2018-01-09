@@ -1,0 +1,22 @@
+#parse("ECF Header.py")
+
+from dmsvc import *
+from elixir import *
+import datetime as dt
+import sqlalchemy as sa
+import ecfexceptions as EECF
+from validators import *
+from tbl import ${ECF_Model}
+
+class ${ECF_Object_Name}(DataModule):
+    """
+    ${ECF_Description}
+    """
+
+    _description = '${ECF_Short_Description}'
+    _model_binder = MVCModelBinder('${ECF_Model}')
+
+
+
+
+

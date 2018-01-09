@@ -2,7 +2,6 @@ package ecf.pycharm.plugin.templates;
 
 import com.intellij.ide.fileTemplates.CreateFromTemplateHandler;
 import com.intellij.ide.fileTemplates.FileTemplate;
-import com.intellij.openapi.fileTypes.StdFileTypes;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiDirectory;
 import com.intellij.psi.PsiElement;

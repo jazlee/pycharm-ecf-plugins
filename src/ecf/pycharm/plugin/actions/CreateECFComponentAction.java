@@ -63,7 +63,9 @@ public class CreateECFComponentAction extends CreateECFTemplateInPackageAction {
                 .addKind("ECFJob", PlatformIcons.PACKAGE_ICON, ECFTemplateUtil.TEMPLATE_ECF_JOB)
                 .addKind("ECFController", PlatformIcons.PACKAGE_ICON, ECFTemplateUtil.TEMPLATE_ECF_CONTROLLER)
                 .addKind("ECFModel", PlatformIcons.CLASS_ICON, ECFTemplateUtil.TEMPLATE_ECF_MODEL)
-                .addKind("ECFBusinessObj", PlatformIcons.CLASS_ICON, ECFTemplateUtil.TEMPLATE_ECF_BOBJ);
+                .addKind("ECFBusinessObj", PlatformIcons.CLASS_ICON, ECFTemplateUtil.TEMPLATE_ECF_BOBJ)
+                .addKind("ECFDataModule", PlatformIcons.CLASS_ICON, ECFTemplateUtil.TEMPLATE_ECF_DM)
+                .addKind("ECFRemoteCall", PlatformIcons.CLASS_ICON, ECFTemplateUtil.TEMPLATE_ECF_RPC);
 
         builder.setValidator(new InputValidatorEx() {
             @Nullable

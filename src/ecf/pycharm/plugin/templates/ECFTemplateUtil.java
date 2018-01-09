@@ -24,6 +24,8 @@ public class ECFTemplateUtil {
     @NonNls public static final String TEMPLATE_ECF_MODEL = "ECF Model";
     @NonNls public static final String TEMPLATE_ECF_CLASS = "ECF Class";
     @NonNls public static final String TEMPLATE_ECF_JOB = "ECF Job";
+    @NonNls public static final String TEMPLATE_ECF_DM = "ECF DataModule";
+    @NonNls public static final String TEMPLATE_ECF_RPC = "ECF Rpc";
 
     private ECFTemplateUtil() {
     }

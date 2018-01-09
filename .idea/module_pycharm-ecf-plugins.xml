@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_pycharm-ecf-plugins" default="compile.module.pycharm-ecf-plugins">
+  <dirname property="module.pycharm-ecf-plugins.basedir" file="${ant.file.module_pycharm-ecf-plugins}"/>
+  
+  <property name="module.jdk.home.pycharm-ecf-plugins" value="${jdk.home.intellij_idea_community_edition_ic-141.1010.3}"/>
+  <property name="module.jdk.bin.pycharm-ecf-plugins" value="${jdk.bin.intellij_idea_community_edition_ic-141.1010.3}"/>
+  <property name="module.jdk.classpath.pycharm-ecf-plugins" value="jdk.classpath.intellij_idea_community_edition_ic-141.1010.3"/>
+  
+  <property name="compiler.args.pycharm-ecf-plugins" value="-encoding UTF-8 -source 1.7 ${compiler.args}"/>
+  
+  <property name="pycharm-ecf-plugins.output.dir" value="${module.pycharm-ecf-plugins.basedir}/../../../../../../../production/pycharm-ecf-plugins"/>
+  <property name="pycharm-ecf-plugins.testoutput.dir" value="${module.pycharm-ecf-plugins.basedir}/../../../../../../../test/pycharm-ecf-plugins"/>
+  
+  <path id="pycharm-ecf-plugins.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="pycharm-ecf-plugins.module.production.classpath">
+    <path refid="${module.jdk.classpath.pycharm-ecf-plugins}"/>
+  </path>
+  
+  <path id="pycharm-ecf-plugins.runtime.production.module.classpath">
+    <pathelement location="${pycharm-ecf-plugins.output.dir}"/>
+  </path>
+  
+  <path id="pycharm-ecf-plugins.module.classpath">
+    <path refid="${module.jdk.classpath.pycharm-ecf-plugins}"/>
+    <pathelement location="${pycharm-ecf-plugins.output.dir}"/>
+  </path>
+  
+  <path id="pycharm-ecf-plugins.runtime.module.classpath">
+    <pathelement location="${pycharm-ecf-plugins.testoutput.dir}"/>
+    <pathelement location="${pycharm-ecf-plugins.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.pycharm-ecf-plugins">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.pycharm-ecf-plugins">
+    <patternset refid="excluded.from.module.pycharm-ecf-plugins"/>
+  </patternset>
+  
+  
+  <target name="compile.module.pycharm-ecf-plugins" depends="compile.module.pycharm-ecf-plugins.production,compile.module.pycharm-ecf-plugins.tests" description="Compile module pycharm-ecf-plugins"/>
+  
+  <target name="compile.module.pycharm-ecf-plugins.production" depends="register.custom.compilers" description="Compile module pycharm-ecf-plugins; production classes"/>
+  
+  <target name="compile.module.pycharm-ecf-plugins.tests" depends="register.custom.compilers,compile.module.pycharm-ecf-plugins.production" description="compile module pycharm-ecf-plugins; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.pycharm-ecf-plugins" description="cleanup module">
+    <delete dir="${pycharm-ecf-plugins.output.dir}"/>
+    <delete dir="${pycharm-ecf-plugins.testoutput.dir}"/>
+  </target>
+</project>

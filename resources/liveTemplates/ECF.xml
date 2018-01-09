@@ -270,5 +270,65 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="afterGetSession" value="def afterGetSession(self, dmsession, user_name):&#10;    '''Event trigered after creating user session'''&#10;    $END$&#10;    return dmsession" description="DM Event trigered after creating user session" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="performSelectData" value="def performSelectData(self, dmsession):&#10;    '''Manually querying list of data'''&#10;    $END$&#10;    return dmsession" description="DM Procedure called for manually execute query for list of data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="performInsertData" value="def performInsertData(self, dmsession):&#10;    '''Manually execute insert data'''&#10;    $END$&#10;    return dmsession" description="DM Procedure called for manually execute insert data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="performUpdateData" value="def performUpdateData(self, dmsession):&#10;    '''Manually execute update data'''&#10;    $END$&#10;    return dmsession" description="DM Procedure called for manually execute update data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="performDeleteData" value="def performDeleteData(self, dmsession):&#10;    '''Manually execute delete data'''&#10;    $END$&#10;    return dmsession" description="DM Procedure called for manually execute delete data" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="initializeQuery" value="def initializeQuery(self, dmsession, model):&#10;    '''Initialize query'''&#10;    $END$&#10;    return dmsession, query" description="DM Procedure called for manually initialize query" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="Python" value="true" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
 </templateSet>
 

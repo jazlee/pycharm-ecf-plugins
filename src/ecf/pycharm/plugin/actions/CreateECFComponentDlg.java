@@ -183,6 +183,15 @@ public class CreateECFComponentDlg extends ECFBaseDialog {
 
                 textSDescription.setText("");
                 textModel.setText("");
+            } else if (selectedName.equalsIgnoreCase(ECFTemplateUtil.TEMPLATE_ECF_RPC)) {
+                textSDescription.setEditable(true);
+                textModel.setEditable(false);
+                textDBTSpace.setEditable(false);
+                textIXTSpace.setEditable(false);
+                textLOBSpace.setEditable(false);
+
+                textSDescription.setText("");
+                textModel.setText("");
             } else {
                 textSDescription.setEditable(true);
                 textModel.setEditable(true);
